@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "359026916594",
+    "project_id": "diamond-chess-aa742",
+    "storage_bucket": "diamond-chess-aa742.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359026916594:android:bf03c575d88dd21940e46b",
+        "android_client_info": {
+          "package_name": "uz.m1nex.diamondchess"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBcVQK_uThvs2nBVS_Y_dtTxalHdbw07c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
