@@ -10,6 +10,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import kotlinx.coroutines.delay
 
@@ -17,6 +18,7 @@ import kotlinx.coroutines.delay
 fun AnimatedGameModeCard(
     index: Int,
     icon: ImageVector,
+    boxColor: Color,
     title: String,
     description: String,
     onClick: () -> Unit
@@ -38,6 +40,7 @@ fun AnimatedGameModeCard(
             icon = icon,
             title = title,
             description = description,
+            boxColor = boxColor,
             onClick = onClick
         )
     }

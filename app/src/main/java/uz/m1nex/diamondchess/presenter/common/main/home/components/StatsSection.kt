@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import uz.m1nex.diamondchess.data.model.User
+import uz.m1nex.diamondchess.ui.theme.StaticColors
 import uz.m1nex.diamondchess.widgets.SizeBox
 
 @Composable
@@ -43,9 +44,9 @@ fun StatsSection(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    StatItem("Побед", user.stats.wins)
-                    StatItem("Поражений", user.stats.losses)
-                    StatItem("Ничьих", user.stats.draws)
+                    StatItem("Побед", user.stats.wins, color = StaticColors.Green)
+                    StatItem("Поражений", user.stats.losses,color = StaticColors.Red)
+                    StatItem("Ничьих", user.stats.draws,color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
 
                 SizeBox(
@@ -62,7 +63,9 @@ fun StatsSection(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    Text("Процент побед")
+                    Text("Процент побед",
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
                     Text("$winPercent%")
                 }
             }

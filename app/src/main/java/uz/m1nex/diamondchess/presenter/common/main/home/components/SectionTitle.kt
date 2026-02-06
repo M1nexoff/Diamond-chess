@@ -18,12 +18,11 @@ fun SectionTitle(
     ) {
         Text(
             text = title,
-            style = MaterialTheme.typography.headlineSmall
+//            style = MaterialTheme.typography.headlineSmall
         )
         Text(
             text = subtitle,
             style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
         )
     }
 }

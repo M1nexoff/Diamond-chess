@@ -9,12 +9,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import uz.m1nex.diamondchess.widgets.SizeBox
 
 @Composable
 fun GameModeCard(
+    boxColor: Color,
     icon: ImageVector,
     title: String,
     description: String,
@@ -36,7 +38,7 @@ fun GameModeCard(
                 modifier = Modifier
                     .size(56.dp)
                     .clip(RoundedCornerShape(16.dp))
-                    .background(MaterialTheme.colorScheme.primaryContainer),
+                    .background(boxColor),
                 contentAlignment = Alignment.Center
             ) {
                 Icon(

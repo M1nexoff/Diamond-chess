@@ -33,7 +33,7 @@ fun HomeHeader(
     onSettingsClick: () -> Unit
 ) {
     Surface(
-        tonalElevation = 2.dp
+//        tonalElevation = 2.dp
     ) {
         Row(
             modifier = Modifier
@@ -64,7 +64,7 @@ fun HomeHeader(
             ) {
                 Text(
                     text = user.name,
-                    style = MaterialTheme.typography.titleMedium
+//                    style = MaterialTheme.typography.titleMedium
                 )
 
                 Row(
@@ -78,7 +78,9 @@ fun HomeHeader(
                     SizeBox(
                         width = 4
                     )
-                    Text("Рейтинг: ${user.rating}")
+                    Text("Рейтинг: ${user.rating}",
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
                 }
             }
 
